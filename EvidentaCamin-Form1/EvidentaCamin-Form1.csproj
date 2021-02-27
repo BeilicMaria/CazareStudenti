@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{47B65FFA-5597-407D-A19C-FA592EDA14F6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>EvidentaCamin_Form1</RootNamespace>
+    <AssemblyName>EvidentaCamin-Form1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Enumerari.cs" />
+    <Compile Include="Adaugare.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Adaugare.Designer.cs">
+      <DependentUpon>Adaugare.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin.Designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Info.Designer.cs">
+      <DependentUpon>Info.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lista.Designer.cs">
+      <DependentUpon>Lista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modificare.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modificare.Designer.cs">
+      <DependentUpon>Modificare.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StocareFactory.cs" />
+    <Compile Include="Utilizator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utilizator.Designer.cs">
+      <DependentUpon>Utilizator.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Adaugare.resx">
+      <DependentUpon>Adaugare.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Info.resx">
+      <DependentUpon>Info.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lista.resx">
+      <DependentUpon>Lista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modificare.resx">
+      <DependentUpon>Modificare.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Utilizator.resx">
+      <DependentUpon>Utilizator.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LibrarieModele\LibrarieModele.csproj">
+      <Project>{f97eab45-8cca-4ff2-af1d-df3b0059a028}</Project>
+      <Name>LibrarieModele</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NivelAccesDate\NivelAccesDate.csproj">
+      <Project>{f7a1654d-f953-46b1-8cae-7580b2ff9639}</Project>
+      <Name>NivelAccesDate</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\giphy.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\return-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\go-back-2-894878.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit-icon-essential-compilation-icon-arrow-line-logo-symbol-square-png-clip-art.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit-button-png-button-cancel-close-delete-exit-remove-stop-x-icon-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sigla-USV-standard-centrat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sadasdas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1200px-Flag_of_Romania.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Flag-United-Kingdom.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\s568.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1920x1080-dark-midnight-blue-solid-color-background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0F1F38.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sadasdas1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\circle-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0F1F381.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\s5681.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\giphy1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\giphy2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\giphy3.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit-button-png-button-cancel-close-delete-exit-remove-stop-x-icon-5121.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\s5682.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wadawda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wadawda1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wadawda2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wadawda-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wadawda-removebg-preview1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgbin-check-mark-symbol-symbol-tJpVM5PCaMNtggHAbMVstYUnw.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\s5683.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Navy Brick.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\26-1User_13-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Navy Brick1.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\adsfda.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
